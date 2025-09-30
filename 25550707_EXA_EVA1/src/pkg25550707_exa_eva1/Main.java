@@ -33,13 +33,13 @@ public class Main {
         
         //IMPRIMIR: ESTO IMPRIME EL TOTAL CAPTURADO DE LAS PRUEBAS
         tiempototal = tiemponata + tiempocicli + tiempocarrera;
-        System.out.print("El tiempo total de las pruebas es: " + tiempototal + "minutos");
+        System.out.println("El tiempo total de las pruebas es: " + tiempototal + "minutos");
 
         //ESTRUCTURA DE DECISION (IF/ELSE) 
         if(tiempototal < 120 && tiemponata < 60 && tiempocicli < 60 && tiempocarrera < 60){
             System.out.println("Clasificación: Excelente");
        
-        }else if(tiempototal < 150 && tiemponata < 70 && tiempocarrera < 70){
+        }else if(tiempototal < 150 || tiemponata < 70 || tiempocicli < 70 || tiempocarrera < 70){
             System.out.println("Clasificación: Buena");
         
         }else{
